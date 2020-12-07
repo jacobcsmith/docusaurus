@@ -12,23 +12,19 @@ tasks:
   test:
     desc: Run automated tests
     cmds:
-      - echo "Add your logic here"
-      - exit 1
+      - echo "N/A"
 
   secure:
     desc: Run automated security checks
     cmds:
-      - echo "Add your logic here"
-      - exit 1
+      - echo "N/A"
 
   deliver:
     desc: Deliver artifact
     cmds:
-      - echo "Add your logic here"
-      - exit 1
+      - echo "N/A"
 
   deploy:
     desc: Deploy project
     cmds:
-      - echo "Add your logic here"
-      - exit 1
+      - npm run deploy

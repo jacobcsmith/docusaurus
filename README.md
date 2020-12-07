@@ -1,18 +1,33 @@
-# template-repo
+# Website
 
-Template repository that has the necessary baseline files for a new repo
+This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
-## Files
+## Installation
 
-| File                        | Description                                                                                     |
-| --------------------------- | ----------------------------------------------------------------------------------------------- |
-| \.github/CODEOWNERS         | Used to automatically choose PR reviewers based on who owns the code                            |
-| \.github/stale\.yaml        | Config file for the Stale plugin                                                                |
-| \.editorconfig              | Shared code style config file                                                                   |
-| \.gitignore                 | Git ignore file                                                                                 |
-| \.pre\-commit\-config\.yaml | Config file for pre\-commit hooks\. Delete/comment out hooks you don't need                     |
-| \.prettierignore            | Prettier ignore file                                                                            |
-| \.remarkrc                  | Config file for remark\-lint which Codacy uses                                                  |
-| LICENSE                     | Project license \- Default is Apache 2\.0\. Get approval if you want to use a different license |
-| README\.md                  | Main README file that all repos need to have                                                    |
-| Taskfile\.yml               | Config file for Go\-Task\. We prefer Go\-Task over Make                                         |
+```console
+npm run install
+```
+
+## Local Development
+
+```console
+npm run start
+```
+
+This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
+
+## Build
+
+```console
+npm run build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+```console
+GIT_USER=<Your GitHub username> USE_SSH=true npm run deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
